@@ -1,11 +1,25 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  body {
+/*reset css*/
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
+  body {
+    font-family: san-serif;
+    background-color:#D9E6F6;
+    
+  }
+
+  #__next{
+    display:flex;
+    min-height:100vh;
+    flex-direction: column;
+  }
+
 `
 
 const theme = {
@@ -24,3 +38,4 @@ export default function App({ Component, pageProps }) {
     </>
   )
 }
+
