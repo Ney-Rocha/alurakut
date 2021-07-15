@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     
   }
   body {
-    font-family: san-serif;
+    font-family: sans-serif;
     background-color:#D9E6F6;
     
   }
@@ -18,6 +18,12 @@ const GlobalStyle = createGlobalStyle`
     display:flex;
     min-height:100vh;
     flex-direction: column;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+    display:block;
   }
 
 `
