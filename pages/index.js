@@ -81,7 +81,7 @@ export default function Home() {
               if((comunidade.title == "" && comunidade.image =="") || (comunidade.image != "" && comunidade.title == "")){
                 alert('Você precisa preencher pelo menos o campo de nome para criar uma comunidade')
               }else if(comunidade.title != "" && comunidade.image ==""){
-                  comunidade.image = 'https://picsum.photos/300';
+                  comunidade.image = 'https://picsum.photos/300?random=2';
                   alert('A comunidade será criada com uma imagem padrão')
                   const comunidadesAtualizadas = [...comunidades, comunidade];
                   setComunidades(comunidadesAtualizadas);
