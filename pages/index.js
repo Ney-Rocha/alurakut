@@ -48,7 +48,7 @@ export default function Home() {
   return (
     < >
       <AlurakutMenu githubUser={githubUser}/>
-      {/* tudo que esta dentro do {}chaves não é obrigatorio a quebra de linha*/}
+      {/* tudo que esta dentro do {}chaves não é obrigatório a quebra de linha*/}
       {/*/o chaves/Bigodinho lê como javascript */}
       <MainGrid>
         {/* <Box style="grid-area: profileArea"></Box> precisa ser camel case == js*/ }
@@ -81,7 +81,7 @@ export default function Home() {
               if((comunidade.title == "" && comunidade.image =="") || (comunidade.image != "" && comunidade.title == "")){
                 alert('Você precisa preencher pelo menos o campo de nome para criar uma comunidade')
               }else if(comunidade.title != "" && comunidade.image ==""){
-                  comunidade.image = 'http://placehold.it/300x300';
+                  comunidade.image = 'https://picsum.photos/300';
                   alert('A comunidade será criada com uma imagem padrão')
                   const comunidadesAtualizadas = [...comunidades, comunidade];
                   setComunidades(comunidadesAtualizadas);
