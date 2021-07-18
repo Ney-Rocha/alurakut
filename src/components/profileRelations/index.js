@@ -7,6 +7,7 @@ export const ProfileRelationsBoxWrapper = styled(Box)`
     grid-gap: 8px;
     grid-template-columns: 1fr 1fr 1fr; 
     max-height: 220px;
+    overflow: auto;
     list-style: none;
   }
   img {
